@@ -21,6 +21,17 @@ public class AdditionSteps {
 	public void i_input_the_operands_and_the_operator(double operand1, double operand2) {
 		result = calculator.add(operand1, operand2); // Assuming add method in Calculator
 	}
+
+	@When("I input the operands {double} and {double} and the operator \"-\"")
+	public void i_input_the_operands_and_the_operator_is_subtract(double operand1, double operand2) {
+		result = calculator.subtract(operand1, operand2); // Assuming a subtract method exists
+	}
+
+	@When("I input the operands {double} and {double} and the operator \"*\"")
+	public void i_input_the_operands_and_the_operator_is_multiply(double operand1, double operand2) {
+		result = calculator.multiply(operand1, operand2); // Assuming a subtract method exists
+	}
+	
 	@When("I input the operands {double} and {double} and the operator \"\\/\"")
 	public void i_input_the_operands_and_the_operator_is_divide(double operand1, double operand2) {
 		try {
